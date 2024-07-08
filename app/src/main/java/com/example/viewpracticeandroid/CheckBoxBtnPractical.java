@@ -3,6 +3,7 @@ package com.example.viewpracticeandroid;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -27,10 +28,17 @@ public class CheckBoxBtnPractical extends AppCompatActivity {
 
         btn = findViewById(R.id.submitBtn);
 
-        StringBuilder stringBuilder = new StringBuilder();
         btn.setOnClickListener(view ->{
+            StringBuilder stringBuilder = new StringBuilder();
             if(checkBox1.isChecked())
-                stringBuilder.append(checkBox1.getText().toString().toLowerCase());
+                stringBuilder.append(checkBox1.getText().toString().toLowerCase()).append(" ");
+            if(checkBox2.isChecked())
+                stringBuilder.append(checkBox2.getText().toString().toLowerCase()).append(" ");
+            if(checkBox3.isChecked())
+                stringBuilder.append(checkBox3.getText().toString().toLowerCase()).append(" ");
+            if(checkBox4.isChecked())
+                stringBuilder.append(checkBox4.getText().toString().toLowerCase()).append(" ");
+            Toast.makeText(getApplicationContext(), stringBuilder + " is selected", Toast.LENGTH_SHORT).show();
         });
 
     }
