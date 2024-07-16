@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -31,6 +30,7 @@
         android:text="Custom checkbox practical"
         android:gravity="center"
         />
+
     <Button
         android:layout_width="match_parent"
         android:layout_below="@id/customCheckBox"
@@ -40,4 +40,55 @@
         android:gravity="center"
         />
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_below="@id/radioButton"
+        android:id="@+id/webViewButton"
+        android:layout_height="wrap_content"
+        android:text="WebView practical"
+        android:gravity="center"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_below="@id/webViewButton"
+        android:id="@+id/seekBarButton"
+        android:layout_height="wrap_content"
+        android:text="SeekBar practical"
+        android:gravity="center"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_below="@id/seekBarButton"
+        android:id="@+id/datePicker"
+        android:layout_height="wrap_content"
+        android:text="Date picker practical"
+        android:gravity="center"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_below="@id/datePicker"
+        android:id="@+id/timePicker"
+        android:layout_height="wrap_content"
+        android:text="Time picker practical"
+        android:gravity="center"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_below="@id/timePicker"
+        android:id="@+id/progressBar"
+        android:layout_height="wrap_content"
+        android:text="ProgressBar practical"
+        android:gravity="center"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_below="@id/progressBar"
+        android:id="@+id/imageSwitcher"
+        android:layout_height="wrap_content"
+        android:text="Image Switcher practical"
+        android:gravity="center"
+        />
 </RelativeLayout>
