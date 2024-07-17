@@ -3,17 +3,14 @@ package com.example.viewpracticeandroid;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
-import android.widget.SeekBar;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button toggleBtn, checkBoxBtn, customCheckBtn, radioBtn, webViewBtn, seekBarBtn, datePickerBtn, timePickerBtn, progressBarBtn, imageSwitcherBtn;
+    Button toggleBtn, checkBoxBtn, customCheckBtn, radioBtn, webViewBtn;
+    Button seekBarBtn, datePickerBtn, timePickerBtn, progressBarBtn, imageSwitcherBtn;
+    Button searchView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         timePickerBtn = findViewById(R.id.timePicker);
         progressBarBtn = findViewById(R.id.progressBar);
         imageSwitcherBtn = findViewById(R.id.imageSwitcher);
+        searchView = findViewById(R.id.searchView);
 
         toggleBtn.setOnClickListener(view -> {
             startActivity(new Intent(getApplicationContext(), ToggleBtnPractical.class));
@@ -66,6 +64,9 @@ public class MainActivity extends AppCompatActivity {
         });
         imageSwitcherBtn.setOnClickListener(view -> {
             startActivity(new Intent(getApplicationContext(), ImageSwitcherPractical.class));
+        });
+        searchView.setOnClickListener(view -> {
+            startActivity(new Intent(getApplicationContext(), SearchViewPractical.class));
         });
     }
 }

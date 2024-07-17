@@ -91,4 +91,12 @@
         android:text="Image Switcher practical"
         android:gravity="center"
         />
+    <Button
+        android:id="@+id/searchView"
+        android:layout_below="@id/imageSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search view practical"
+        android:gravity="center"
+        />
 </RelativeLayout>
